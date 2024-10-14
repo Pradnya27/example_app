@@ -1,0 +1,7 @@
+stages:
+  - scan
+debricked:
+  stage: scan
+  script:
+    - curl -LsS https://github.com/debricked/cli/releases/download/release-v2/cli_linux_x86_64.tar.gz | tar -xz debricked
+    - ./debricked scan
