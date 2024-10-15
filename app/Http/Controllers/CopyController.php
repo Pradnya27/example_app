@@ -50,8 +50,8 @@ class FileUploadController extends Controller
      */
     public function __construct()
     {
-        $this->token = config('services.access_token') ?? "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzUxMiJ9.eyJpYXQiOjE3Mjg5NDAyODksImV4cCI6MTcyODk0Mzg4OSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9DT01QQU5ZX0FETUlOIiwiUk9MRV9SRVBPU0lUT1JZX0FETUlOIl0sImVtYWlsIjoiamFpbnByYWRueWEyN0BnbWFpbC5jb20ifQ.QmdKR6KsvePvuEbprDOQqpyAm-_rrG8VLc78b5qo-SNz6GdsbneR1P_pUBd2X5XZha4RDac49RRqCEvwFKadmyQBpOZjF5JAMSu45SMa3A96TcjES-5YKrjM8M_oJ-oqDNyA9Vl_wvvAR8-yzzGwmaoiomKla4xDSlNOOY54s9EfIY5cXPHSkZJahaJ1GGSK4t2fq0E9JsvDS5hg2-zPr7fz2Jyexepn62YeL7YDWxcpMo_uOxysUKkJGd1hLjErOSvIcaYeoHnvZMM74V-2HdjR--EpZXbhtVZlcgUMgekW5U960SSRWcW9H3eOjmHrfSOxlvhEtVski5jXSKUZLmiD9Ih085OVOHnrbLj0yygNfw6y_hcGWUvgs1XBmNV3oDh0ZA48FLTwQMXFirSUJYpvEoBTTtqZ_JBMxVytL--7OhbByKTEIr8RTO2gszf0Grw9vYL8UIOiiWnlZBL74JfgPrvNFeH32Z2NtizWcxp_r-Ttv9L6R-s8XpceQ6fKo_3rUVcSzXc_XzvGwMrJMwZp0wvSMMyLfeo4rpLwClLB51FQP2VUWin5KBaLbeJNtCw7CiQ6g2MOeDeSVUFGkLu6N5QX-2rdPRrMQTYC_VauKeoAtuMAeP4cQoc8rZhljObePaBqlc_4STKoIRRm7dvQqr-Rcz8nCZ4BzndimvM";
-        $this->refreshToken = config('services.refresh_token') ?? "11637df6866e541c97e92148f94aefe0d65993b6fdb8b5bab19d674388631b464abc9bdae698ca1981c7efcc1e693517da7fd385afff8d18918345cc56ad7610";
+        $this->token = config('services.access_token') ?? "Bearer";
+        $this->refreshToken = config('services.refresh_token') ?? "";
         $this->scandep = config('services.scandep') ?? "https://debricked.com/api/1.0/open/uploads/dependencies/files";
         $this->scandoc = config('services.scandoc') ?? "https://debricked.com/api/1.0/open/finishes/dependencies/files/uploads";
         $this->status = config('services.status') ?? "https://debricked.com/api/1.0/open/ci/upload/status";
