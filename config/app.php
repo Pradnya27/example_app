@@ -81,7 +81,8 @@ return [
     */
 
     'locale' => 'en',
-
+    'log_level' => env('APP_LOG_LEVEL', 'error'),
+    'log' => env('APP_LOG', 'daily'),
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
